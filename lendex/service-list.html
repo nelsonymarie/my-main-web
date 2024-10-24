@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lendex - Plantilla de Portafolio Personal Bootstrap</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <!-- Vendor CSS (Contiene Bootstrap, Fuentes de Iconos) -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" />
+
+    <!-- Plugin CSS (Archivos Globales de Plugins) -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Versión Minificada -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+
+<body>
+
+<main class="main-wrapper">
+    <!-- .....:::::: Inicio de la Sección de Encabezado :::::.... -->
+    <header class="header-section sticky-header d-none d-lg-block">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <!-- Inicio del Logo del Encabezado -->
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/images/logo/logo.png" alt="">
+                        </a>
+                        <!-- Fin del Logo del Encabezado -->
+                    </div>
+                    <div class="col-auto">
+                        <!-- Inicio del Menú del Encabezado -->
+                        <ul class="header-nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="has-dropdown">
+                                <a href="service-list.html">Servicio</a>
+                                <ul class="submenu">
+                                    <li><a href="service-list.html">Servicios</a></li>
+                                    <li><a href="service-details.html">Detalles del Servicio</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="blog-list.html">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog-list.html">Lista de Blog de Ancho Completo</a></li>
+                                    <li><a href="blog-list-sidebar-left.html">Lista de Blog con Barra Lateral Izquierda</a></li>
+                                    <li><a href="blog-list-sidebar-right.html">Lista de Blog con Barra Lateral Derecha</a></li>
+                                    <li><a href="blog-details.html">Detalles del Blog de Ancho Completo</a></li>
+                                    <li><a href="blog-details-sidebar-left.html">Detalles del Blog con Barra Lateral Izquierda</a></li>
+                                    <li><a href="blog-details-sidebar-right.html">Detalles del Blog con Barra Lateral Derecha</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Páginas</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">Sobre Nosotros</a></li>
+                                    <li><a href="project-list.html">Proyecto</a></li>
+                                    <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                                    <li><a href="404-page.html">Página 404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                        <!-- Fin del Menú del Encabezado -->
+                    </div>
+                    <div class="col">
+                        <div class="header-btn-link text-end">
+                            <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Contrátanos <i class="icofont-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .....:::::: Fin de la Sección de Encabezado :::::.... -->
+
+    <!-- .....:::::: Inicio de la Sección de Encabezado Móvil :::::.... -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-action-link text-end">
+                        <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu"><i class="icofont-navigation-menu"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....:::::: Fin de la Sección de Encabezado Móvil :::::.... -->
+
+    <!--  Inicio de la Sección del Menú Móvil Offcanvas -->
+    <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
+        <!-- Inicio del Encabezado Offcanvas -->
+        <div class="offcanvas-header text-right">
+            <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
+        </div>
+        <!-- Fin del Encabezado Offcanvas -->
+        <!-- Inicio del Contenedor del Menú Móvil Offcanvas -->
+        <div class="offcanvas-mobile-menu-wrapper">
+            <!-- Inicio del Menú Móvil  -->
+            <div class="mobile-menu-bottom">
+                <!-- Inicio del Menú Móvil Nav -->
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Servicios</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="service-list.html">Lista de Servicios</a></li>
+                                <li><a href="service-details.html">Detalles del Servicio</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Blog</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="blog-list.html">Lista de Blog de Ancho Completo</a></li>
+                                <li><a href="blog-list-sidebar-left.html">Lista de Blog con Barra Lateral Izquierda</a></li>
+                                <li><a href="blog-list-sidebar-right.html">Lista de Blog con Barra Lateral Derecha</a></li>
+                                <li><a href="blog-details.html">Detalles del Blog de Ancho Completo</a></li>
+                                <li><a href="blog-details-sidebar-left.html">Detalles del Blog con Barra Lateral Izquierda</a></li>
+                                <li><a href="blog-details-sidebar-right.html">Detalles del Blog con Barra Lateral Derecha</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Páginas</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about.html">Sobre Nosotros</a></li>
+                                <li><a href="project-list.html">Proyecto</a></li>
+                                <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                                <li><a href="404-page.html">Página 404</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span>Contacto</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fin del Menú Móvil Nav -->
+            </div>
+            <!-- Fin del Menú Móvil -->
+
+            <!-- Inicio de la Información de Contacto Móvil -->
+            <div class="mobile-contact-info text-center">
+                <ul class="social-link">
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-skype"></i></a></li>
+                </ul>
+            </div>
+            <!-- Fin de la Información de Contacto Móvil -->
+
+        </div>
+        <!-- Fin del Contenedor del Menú Móvil Offcanvas -->
+    </div>
+    <!-- ...:::: Fin de la Sección del Menú Móvil Offcanvas :::... -->
+
+    <!-- Superposición Offcanvas -->
+    <div class="offcanvas-overlay"></div>
+
+    <!-- ...::: Inicio de la Sección de Breadcrumb :::... -->
+    <div class="breadcrumb-section section-bg overflow-hidden pos-relative">
+        <div class="breadcrumb-shape-top-left"></div>
+        <div class="breadcrumb-shape-bottom-right"></div>
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <h2 class="title">Servicios</h2>
+                            <ul class="breadcrumb-link">
+                                <li><a href="service-list.html">Servicio</a></li>
+                                <li class="active" aria-current="page">Lista de Servicios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...::: Inicio de la Sección de Lista de Servicios :::... -->
+    <!-- ...::: Inicio Sección de Información en Video :::... -->
+    <div class="video-info-display-section section-gap-tb-165">
+        <div class="video-info-display-box">
+            <div class="container">
+                <div class="video-info-display-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 col-10 offset-1 offset-sm-2 offset-md-3 offset-lg-0">
+                            <div class="video-card">
+                                <a class="wave-btn" href="https://youtu.be/MKjhBO2xQzg" data-autoplay="true" data-vbtype="video">
+                                    <div class="ripple"><i class="icofont-ui-play"></i></div>
+                                </a>
+
+                                <a href="#" class="btn btn-xl btn-outline-one icon-space-left">Descargar Portafolio <i class="icofont-download"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-8 offset-md-2 offset-lg-0 offset-xl-1">
+                            <div class="video-info-content">
+                                <h2 class="title">Equipo DecorArte</h2>
+
+                                <h3 class="sub-title">
+                                    Diseñadores web especializados en brindar soluciones creativas y personalizadas
+                                </h3>
+
+                                <p>En DecorArte, nos dedicamos a ofrecer servicios de diseño web innovadores y personalizados que generan resultados impactantes para todo tipo de negocios. Nuestro equipo de expertos en UI/UX crea experiencias visuales optimizadas para plataformas como Shopify, Webflow, y muchas más, siempre asegurando una navegación intuitiva y eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin Sección de Información en Video :::... -->
+
+    <div class="service-list-section section-gap-tb-165">
+        <div class="container">
+            <div class="row mb-n6">
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-1.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Diseño Web</a></h4>
+                        <ul class="list-item">
+                            <li>Páginas de Inicio</li>
+                            <li>Navegación Intuitiva</li>
+                            <li>Estructura Clara</li>
+                            <li>Diseño Atractivo</li>
+                            <li>Adaptado a tu Negocio</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-2.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Desarrollo Web</a></h4>
+                        <ul class="list-item">
+                            <li>Sitios Responsivos</li>
+                            <li>Optimización de Velocidad</li>
+                            <li>Integración de Funcionalidades</li>
+                            <li>Sistemas de Gestión</li>
+                            <li>Actualizaciones Seguras</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-3.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Diseño Gráfico</a></h4>
+                        <ul class="list-item">
+                            <li>Creación de Logotipos</li>
+                            <li>Imagen Corporativa</li>
+                            <li>Folletos y Flyers</li>
+                            <li>Material Promocional</li>
+                            <li>Gráficos Personalizados</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-4.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Marketing Digital</a></h4>
+                        <ul class="list-item">
+                            <li>Posicionamiento en Google</li>
+                            <li>Gestión de Redes Sociales</li>
+                            <li>Publicidad en Línea</li>
+                            <li>Email Marketing</li>
+                            <li>Estrategias de Contenido</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-5.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Análisis de Datos</a></h4>
+                        <ul class="list-item">
+                            <li>Informes Personalizados</li>
+                            <li>Estadísticas de Visitas</li>
+                            <li>Análisis de Mercado</li>
+                            <li>Comportamiento de Usuarios</li>
+                            <li>Mejora Continua</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+                <!-- Inicio del Ítem Individual de Servicio -->
+                <div class="col-xl-4 col-md-6 col-12 mb-6">
+                    <div class="service-box-single-item">
+                        <div class="inner-shape inner-shape-top-right"></div>
+                        <div class="icon"><img src="assets/images/icon/service-icon-6.png" alt=""></div>
+                        <h4 class="title"><a href="service-details.html">Identidad de Marca</a></h4>
+                        <ul class="list-item">
+                            <li>Estrategia de Marca</li>
+                            <li>Manual Corporativo</li>
+                            <li>Branding Digital</li>
+                            <li>Campañas Creativas</li>
+                            <li>Conceptos Innovadores</li>
+                        </ul>
+                        <div class="inner-shape inner-shape-bottom-right"></div>
+                    </div>
+                </div>
+                <!-- Fin del Ítem Individual de Servicio -->
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin de la Sección de Lista de Servicios :::... -->
+
+
+    <!-- ...::: Start Counter Display Section :::... -->
+    <div class="counter-display-section section-gap-tb-165 section-bg-2">
+        <div class="counter-display-wrapper">
+            <div class="container">
+                <div class="row justify-content-center justify-content-sm-start">
+                    <div class="d-block d-md-flex justify-content-md-start col-12 col-sm-4 col-md-4">
+                        <!-- Start Counterup Single Item -->
+                        <div class="counterup-single-item">
+                            <div class="icon">
+                                <img src="assets/images/icon/counterup-icon-1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2 class="number"><span class="counter">3,58</span>+</h2>
+                                <span class="text">Clientes Satisfechos</span>
+                            </div>
+                        </div>
+                        <!-- End Counterup Single Item -->
+                    </div>
+                    <div class="d-block d-md-flex justify-content-md-center col-12 col-sm-4 col-md-4">
+                        <!-- Start Counterup Single Item -->
+                        <div class="counterup-single-item">
+                            <div class="icon">
+                                <img src="assets/images/icon/counterup-icon-2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2 class="number"><span class="counter">512</span>K</h2>
+                                <span class="text">Proyectos Completados</span>
+                            </div>
+                        </div>
+                        <!-- End Counterup Single Item -->
+                    </div>
+                    <div class="d-block d-md-flex justify-content-md-end col-12 col-sm-4 col-md-4">
+                        <!-- Start Counterup Single Item -->
+                        <div class="counterup-single-item">
+                            <div class="icon">
+                                <img src="assets/images/icon/counterup-icon-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2 class="number"><span class="counter">10</span>+</h2>
+                                <span class="text">Años de Experiencia</span>
+                            </div>
+                        </div>
+                        <!-- End Counterup Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Counter Display Section :::... -->
+
+    <!-- ...::: Inicio de la Sección de Logos de Compañías :::... -->
+    <div class="company-logo-display section-gap-tb-165">
+        <div class="company-logo-display-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- Inicio del Contenido de la Sección -->
+                        <div class="section-content pos-relative">
+                            <span class="section-tag">Soporte al 100%</span>
+                            <h2 class="section-title">¿Lo imaginas? ¡Lo haremos realidad!</h2>
+                        </div>
+                        <!-- Fin del Contenido de la Sección -->
+                    </div>
+                </div>
+
+                <div class="company-logo-display-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="company-logo-display-slider">
+                                <!-- Contenedor principal del Slider -->
+                                <div class="swiper-container">
+                                    <!-- Wrapper necesario -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Inicio del Ítem de Logo de Compañía -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="#" class="image">
+                                                <img src="assets/images/company-logo/company-logo-1.png" alt="">
+                                                <img src="assets/images/company-logo/1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- Fin del Ítem de Logo de Compañía -->
+                                        <!-- Repite este bloque para más logos -->
+                                        <!-- Inicio del Ítem de Logo de Compañía -->
+                                        <div class="company-logo-single-item swiper-slide">
+                                            <a href="#" class="image">
+                                                <img src="assets/images/company-logo/company-logo-2.png" alt="">
+                                                <img src="assets/images/company-logo/2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- Fin del Ítem de Logo de Compañía -->
+                                        <!-- Añade más ítems según sea necesario -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin de la Sección de Logos de Compañías :::... -->
+
+    <!-- ...::: Inicio Sección de Pie de Página :::... -->
+    <footer class="footer-section section-bg overflow-hidden pos-relative">
+        <div class="footer-inner-shape-top-left"></div>
+        <div class="footer-inner-shape-top-right"></div>
+        <div class="footer-section-top section-gap-t-165">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Inicio Contenido de Sección -->
+                        <div class="section-content pos-relative text-center">
+                            <span class="section-tag">Obtén las Últimas Actualizaciones</span>
+                            <h2 class="section-title">Suscríbete al Boletín</h2>
+                        </div>
+                        <!-- Fin Contenido de Sección -->
+                    </div>
+                </div>
+                <div class="footer-top-wrapper text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="#" class="footer-newsletter">
+                                <input type="email" placeholder="su correo aquí@ejemplo.com">
+                                <button class="submit-btn" type="submit">Suscríbete Ahora</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center section-gap-tb-165">
+            <div class="container">
+                <div class="row justify-content-between align-items-center mb-n5">
+                    <div class="col-auto mb-5">
+                        <!-- Inicio Información de Contacto -->
+                        <div class="footer-single-info">
+                            <a href="tel:+12107231239" class="info-box">
+                                <span class="icon"><i class="icofont-phone"></i></span>
+                                <span class="text">+1-210-723-1239</span>
+                            </a>
+                        </div>
+                        <!-- Fin Información de Contacto -->
+                    </div>
+                    <div class="col-auto mb-5">
+                        <!-- Inicio Información de Contacto -->
+                        <div class="footer-single-info">
+                            <a href="mailto:demo@example.com" class="info-box">
+                                <span class="icon"><i class="icofont-envelope-open"></i></span>
+                                <span class="text">demo@example.com</span>
+                            </a>
+                        </div>
+                        <!-- Fin Información de Contacto -->
+                    </div>
+                    <div class="col-auto mb-5">
+                        <!-- Inicio Información de Contacto -->
+                        <div class="footer-single-info">
+                            <ul class="social-link">
+                                <li><a href="https://www.example.com" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="https://www.example.com" target="_blank"><i class="icofont-dribbble"></i></a></li>
+                                <li><a href="https://www.example.com" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Fin Información de Contacto -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-auto">
+                        <div class="footer-copyright">
+                            <p class="copyright-text">&copy; 2024 <a href="index.html">DecorArte</a> Hecho con <i class="icofont-heart"></i> por <a href="#" target="_blank">Misael Cuadrado</a></p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="index.html" class="footer-logo">
+                            <div class="logo">
+                                <img src="assets/images/logo/logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ...::: Fin Sección de Pie de Página :::... -->
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+</main>
+
+<!-- Global Vendor, plugins JS -->
+
+<!-- JS Files
+============================================ -->
+<!-- Global Vendor, plugins JS -->
+
+<!-- Vendor JS -->
+<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+<!--Plugins JS-->
+<script src="assets/js/plugins/swiper-bundle.min.js"></script>
+<script src="assets/js/plugins/jquery.appear.min.js"></script>
+<script src="assets/js/plugins/venobox.min.js"></script>
+<script src="assets/js/plugins/jquery.waypoints.js"></script>
+<script src="assets/js/plugins/images-loaded.min.js"></script>
+<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/ajax-mail.js"></script>
+<script src="assets/js/plugins/material-scrolltop.js"></script>
+
+<!-- Minify Version -->
+<!-- <script src="assets/js/vendor.min.js"></script>
+<script src="assets/js/plugins.min.js"></script> -->
+
+<!--Main JS (Common Activation Codes)-->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

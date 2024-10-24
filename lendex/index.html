@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lendex - Plantilla de Portafolio Personal con Bootstrap</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <!-- Vendor CSS (Contiene Bootstrap, Fuentes de Iconos) -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" />
+
+    <!-- Plugin CSS (Archivos de Plugins Globales) -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Versión Minificada -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+
+<body>
+
+<main class="main-wrapper">
+    <!-- .....:::::: Inicio Sección de Encabezado :::::.... -->
+    <header class="header-section sticky-header d-none d-lg-block">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <!-- Inicio Logo del Encabezado -->
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/images/logo/logo.png" alt="">
+                        </a>
+                        <!-- Fin Logo del Encabezado -->
+                    </div>
+                    <div class="col-auto">
+                        <!-- Inicio Menú del Encabezado -->
+                        <ul class="header-nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="has-dropdown">
+                                <a href="service-list.html">Servicios</a>
+                                <ul class="submenu">
+                                    <li><a href="service-list.html">Servicios</a></li>
+                                    <li><a href="service-details.html">Detalles del Servicio</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="blog-list.html">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog-list.html">Lista de Blogs a Todo Ancho</a></li>
+                                    <li><a href="blog-list-sidebar-left.html">Lista de Blogs con Sidebar Izquierda</a></li>
+                                    <li><a href="blog-list-sidebar-right.html">Lista de Blogs con Sidebar Derecha</a></li>
+                                    <li><a href="blog-details.html">Detalles del Blog a Todo Ancho</a></li>
+                                    <li><a href="blog-details-sidebar-left.html">Detalles del Blog con Sidebar Izquierda</a></li>
+                                    <li><a href="blog-details-sidebar-right.html">Detalles del Blog con Sidebar Derecha</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Páginas</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">Sobre Nosotros</a></li>
+                                    <li><a href="project-list.html">Proyecto</a></li>
+                                    <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                                    <li><a href="404-page.html">Página 404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                        <!-- Fin del Menú del Encabezado -->
+                    </div>
+                    <div class="col">
+                        <div class="header-btn-link text-end">
+                            <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Contrátanos <i class="icofont-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .....:::::: Fin Sección de Encabezado :::::.... -->
+
+
+    <!-- .....:::::: Inicio Sección de Encabezado Móvil :::::.... -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-action-link text-end">
+                        <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu"><i class="icofont-navigation-menu"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....:::::: Fin Sección de Encabezado Móvil :::::.... -->
+
+    <!--  Inicio Sección de Menú Móvil Offcanvas -->
+    <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
+        <!-- Inicio Encabezado Offcanvas -->
+        <div class="offcanvas-header text-end">
+            <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
+        </div> <!-- Fin Encabezado Offcanvas -->
+        <!-- Inicio Contenedor de Menú Móvil Offcanvas -->
+        <div class="offcanvas-mobile-menu-wrapper">
+            <!-- Inicio Menú Móvil -->
+            <div class="mobile-menu-bottom">
+                <!-- Inicio Navegación del Menú Móvil -->
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Servicios</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="service-list.html">Lista de Servicios</a></li>
+                                <li><a href="service-details.html">Detalles del Servicio</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Blog</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="blog-list.html">Lista de Blogs a Todo Ancho</a></li>
+                                <li><a href="blog-list-sidebar-left.html">Lista de Blogs con Sidebar Izquierda</a></li>
+                                <li><a href="blog-list-sidebar-right.html">Lista de Blogs con Sidebar Derecha</a></li>
+                                <li><a href="blog-details.html">Detalles del Blog a Todo Ancho</a></li>
+                                <li><a href="blog-details-sidebar-left.html">Detalles del Blog con Sidebar Izquierda</a></li>
+                                <li><a href="blog-details-sidebar-right.html">Detalles del Blog con Sidebar Derecha</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Páginas</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about.html">Sobre Nosotros</a></li>
+                                <li><a href="project-list.html">Proyecto</a></li>
+                                <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                                <li><a href="404-page.html">Página 404</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span>Contacto</span></a>
+                        </li>
+                    </ul>
+                </div> <!-- Fin Navegación del Menú Móvil -->
+            </div> <!-- Fin del Menú Móvil -->
+
+
+                <!-- Start Mobile contact Info -->
+            <div class="mobile-contact-info text-center">
+                <ul class="social-link">
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61567242005492"><i class="icofont-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://x.com/DecorArteWebdev"><i class="icofont-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/@DecorArteWebDesign"><i class="icofont-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- End Mobile contact Info -->
+
+            </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+        </div>
+        <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+
+        <!-- Offcanvas Overlay -->
+        <div class="offcanvas-overlay"></div>
+
+    <!-- ...::: Inicio Sección Hero :::... -->
+    <div class="hero-section section-dark-blue-bg">
+        <div class="hero-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-7">
+                        <div class="hero-content">
+                            <h3 class="title-big">Diseño Web</h3>
+                            <h2 class="title-large">Decor <span class="shape-mark">Arte</span></h2>
+                            <p>¡Creamos todo tipo de páginas web!</p>
+
+                            <a href="https://wa.me/message/Z5KNDMRSOW26O1" class="btn btn-xl btn-outline-one icon-space-left" target="_blank" rel="noopener noreferrer">
+                                Contáctanos <i class="icofont-whatsapp"></i>
+                            </a>
+
+                            <div class="video-link">
+                                <a class="wave-btn" href="https://youtu.be/MKjhBO2xQzg" data-autoplay="true" data-vbtype="video">
+                                    <div class="ripple"><i class="icofont-ui-play"></i></div>
+                                </a>
+                                <span class="video-text"> Ver Video</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-shape hero-top-shape">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hero-shape hero-bottom-shape">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="hero-portrait">
+                <div class="image">
+                    <img class="img-fluid" src="assets/images/portrait/portrait-hero.png" alt="">
+
+                    <div class="image-half-round-shape"></div>
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=61567242005492" target="_blank"><i class="icofont-facebook"></i></a>
+                        <a href="https://x.com/DecorArteWebdev" target="_blank"><i class="icofont-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/misaelcuadrado/" target="_blank"><i class="icofont-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@DecorArteWebDesign" target="_blank"><i class="icofont-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin Sección Hero :::... -->
+    <!-- ...::: Iniciar Sección de Visualización de Proyectos :::... -->
+    <div class="project-display-section section-gap-tb-165">
+        <div class="project-display-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-12 d-block d-md-flex justify-content-between">
+                        <!-- Iniciar Contenido de la Sección -->
+                        <div class="section-content pos-relative">
+                            <span class="section-tag">Portafolio</span>
+                            <h2 class="section-title">Proyectos Completos</h2>
+                        </div>
+                        <!-- Finalizar Contenido de la Sección -->
+
+                        <div class="default-nav-style mt-6 mb-6 mb-md-0 ">
+                            <!-- Si necesitamos botones de navegación -->
+                            <div class="slider-button button-prev"><i class="icofont-double-left"></i></div>
+                            <div class="slider-button button-next"><i class="icofont-double-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-display-wrapper">
+                <div class="project-display-slider">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Diapositivas -->
+                            <!-- Iniciar Elemento Único de Caja de Proyecto -->
+                            <div class="project-box-single-item swiper-slide">
+                                <div class="img-box">
+                                    <div class="bg-overlay"></div>
+                                    <div class="bg-image">
+                                        <img src="assets/images/project/project-slider-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="assets/images/project/project-slider-img-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title catagory-nav-item">
+                                        <a href="project-details.html">¡La solución web que tu restaurante necesita!</a>
+                                    </h4>
+
+                                    <ul class="catagory-nav-item">
+                                        <li><a href="project-list.html">Diseño Web para Restaurantes</a></li>
+                                        <li><a href="contact.html">Consultoría Personalizada</a></li>
+                                        <li><a href="project-list.html">Proyectos Recientes</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- Finalizar Elemento Único de Caja de Proyecto -->
+                            <!-- Iniciar Elemento Único de Caja de Proyecto -->
+                            <div class="project-box-single-item swiper-slide">
+                                <div class="img-box">
+                                    <div class="bg-overlay"></div>
+                                    <div class="bg-image">
+                                        <img src="assets/images/project/project-slider-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="assets/images/project/project-slider-img-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="project-details.html">Musion - Plantilla de Sitio Web de Jardinería</a></h4>
+
+                                    <ul class="catagory-nav-item">
+                                        <li><a href="">Jardinería</a></li>
+                                        <li><a href="">Paisajismo</a></li>
+                                        <li><a href="">Verde</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Finalizar Elemento Único de Caja de Proyecto -->
+                            <!-- Iniciar Elemento Único de Caja de Proyecto -->
+                            <div class="project-box-single-item swiper-slide">
+                                <div class="img-box">
+                                    <div class="bg-overlay"></div>
+                                    <div class="bg-image">
+                                        <img src="assets/images/project/project-slider-img-3.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="assets/images/project/project-slider-img-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="project-details.html">SEOLLY - Agencia de Marketing SEO & Digital</a></h4>
+
+                                    <ul class="catagory-nav-item">
+                                        <li><a href="">Caridad</a></li>
+                                        <li><a href="">Recaudación de Fondos</a></li>
+                                        <li><a href="">Sin Fines de Lucro</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Finalizar Elemento Único de Caja de Proyecto -->
+                            <!-- Iniciar Elemento Único de Caja de Proyecto -->
+                            <div class="project-box-single-item swiper-slide">
+                                <div class="img-box">
+                                    <div class="bg-overlay"></div>
+                                    <div class="bg-image">
+                                        <img src="assets/images/project/project-slider-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="assets/images/project/project-slider-img-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="project-details.html">Virtuf - Plantilla Bootstrap 5 para Agencia Creativa</a></h4>
+
+                                    <ul class="catagory-nav-item">
+                                        <li><a href="">Jardinería</a></li>
+                                        <li><a href="">Paisajismo</a></li>
+                                        <li><a href="">Verde</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Finalizar Elemento Único de Caja de Proyecto -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ...::: Finalizar Sección de Visualización de Proyectos :::... -->
+
+    <!-- ...::: Inicio Sección de Presentación de Servicios :::... -->
+    <div class="service-display-section section-gap-tb-165 pos-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Inicio Contenido de la Sección -->
+                    <div class="section-content">
+                        <span class="section-tag">Nuestros Servicios</span>
+                        <h2 class="section-title">Servicios que Ofrecemos a Nuestros Clientes</h2>
+                    </div>
+                    <!-- Fin Contenido de la Sección -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Inicio Wrapper de la Sección de Servicios -->
+        <div class="service-display-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="service-display-slider">
+                            <!-- Contenedor principal del slider -->
+                            <div class="swiper-container">
+                                <!-- Wrapper requerido adicional -->
+                                <div class="swiper-wrapper">
+                                    <!-- Inicio Elemento Único de Caja de Servicio para Restaurantes -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-4.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Sitios Web para Restaurantes</a></h4>
+                                        <ul class="list-item">
+                                            <li>Menús Interactivos</li>
+                                            <li>Reservas en Línea</li>
+                                            <li>Galería de Imágenes de Platos</li>
+                                            <li>Información de Contacto y Ubicación</li>
+                                            <li>Integración con Redes Sociales</li>
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio para Restaurantes -->
+
+                                    <!-- Inicio Elemento Único de Caja de Servicio para Marcas Personales -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-5.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Sitios Web de Marca Personal</a></h4>
+                                        <ul class="list-item">
+                                            <li>Portafolio en Línea</li>
+                                            <li>Blog Personal</li>
+                                            <li>Optimización SEO</li>
+                                            <li>Formularios de Contacto</li>
+                                            <li>Conexión a Redes Sociales</li>
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio para Marcas Personales -->
+
+                                    <!-- Inicio Elemento Único de Caja de Servicio para Pequeñas Empresas -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-6.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Sitios Web para Pequeñas Empresas</a></h4>
+                                        <ul class="list-item">
+                                            <li>Diseño de Sitios Web Personalizados</li>
+                                            <li>Optimización para Móviles</li>
+                                            <li>Integración de E-commerce</li>
+                                            <li>Soporte y Mantenimiento</li>
+<!--                                            <li>Marketing Digital</li>-->
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio para Pequeñas Empresas -->
+
+                                    <!-- Inicio Elemento Único de Caja de Servicio de Diseño UI/UX -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-1.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Diseño UI/UX</a></h4>
+                                        <ul class="list-item">
+                                            <li>Diseño Centrado en el Usuario</li>
+                                            <li>Investigación de Usuarios</li>
+                                            <li>Wireframes y Prototipos</li>
+                                            <li>Pruebas de Usabilidad</li>
+                                            <li>Accesibilidad y Responsividad</li>
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio -->
+
+                                    <!-- Inicio Elemento Único de Caja de Servicio de Desarrollo Frontend -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-2.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Desarrollo Frontend</a></h4>
+                                        <ul class="list-item">
+                                            <li>HTML5 y CSS3</li>
+                                            <li>JavaScript y Frameworks</li>
+                                            <li>Adaptabilidad para Móviles</li>
+                                            <li>Optimización de Rendimiento</li>
+                                            <li>Mejoras en la Experiencia de Usuario</li>
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio -->
+
+                                    <!-- Inicio Elemento Único de Caja de Servicio de Ilustración -->
+                                    <div class="service-box-single-item swiper-slide">
+                                        <div class="inner-shape inner-shape-top-right"></div>
+                                        <div class="icon"><img src="assets/images/icon/service-icon-3.png" alt=""></div>
+                                        <h4 class="title"><a href="service-details.html">Ilustración</a></h4>
+                                        <ul class="list-item">
+                                            <li>Diseño de Personajes</li>
+                                            <li>Conjunto de Iconos</li>
+                                            <li>Guía de Ilustración</li>
+                                            <li>Conjunto de Ilustraciones</li>
+                                            <li>Gráficos en Movimiento</li>
+                                            <li>Marketing Digital</li>
+
+                                        </ul>
+                                        <div class="inner-shape inner-shape-bottom-right"></div>
+                                    </div>
+                                    <!-- Fin Elemento Único de Caja de Servicio de Ilustración -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Si necesitamos paginación -->
+                <div class="service-display-dots">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Fin Wrapper de la Sección de Servicios -->
+        </div>
+        <!-- ...::: Fin Sección de Presentación de Servicios :::... -->
+
+        <!-- ...::: Start Counter Display Section :::... -->
+        <div class="counter-display-section section-gap-tb-165 section-bg-2">
+            <div class="counter-display-wrapper">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-sm-start">
+                        <div class="d-block d-md-flex justify-content-md-start col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">3,58</span>+</h2>
+                                    <span class="text">Clientes Satisfechos</span>
+                                </div>
+                            </div>
+                            <!-- End Counterup Single Item -->
+                        </div>
+                        <div class="d-block d-md-flex justify-content-md-center col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">512</span>K</h2>
+                                    <span class="text">Proyectos Completados</span>
+                                </div>
+                            </div>
+                            <!-- End Counterup Single Item -->
+                        </div>
+                        <div class="d-block d-md-flex justify-content-md-end col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-3.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">10</span>+</h2>
+                                    <span class="text">Años de Experiencia</span>
+                                </div>
+                            </div>
+                            <!-- End Counterup Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Counter Display Section :::... -->
+
+        <!-- ...::: Iniciar Sección de Testimonios :::... -->
+        <div class="testimonial-display-section section-gap-tb-165 section-bg">
+            <div class="testimonial-display-box d-flex flex-column align-items-center d-xl-block pos-relative">
+                <div class="container overflow-hidden">
+                    <div class="row">
+                        <div class="col d-xl-flex justify-content-xl-end">
+                            <!-- Iniciar Contenido de la Sección -->
+                            <div class="section-content pos-relative">
+                                <span class="section-tag">Testimonios</span>
+                                <h2 class="section-title">Clientes Satisfechos</h2>
+                            </div>
+                            <!-- Finalizar Contenido de la Sección -->
+                        </div>
+                    </div>
+
+                    <div class="testimonial-display-wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="testimonial-display-slider">
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <!-- Iniciar Elemento Único de Testimonio -->
+                                            <div class="testimonial-slider-single-item swiper-slide">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">Gracias al equipo, ahora tengo un sitio web que
+                                                        refleja perfectamente mi marca. La atención al
+                                                        detalle fue excepcional.</p>
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">Luis Hernández</h4>
+                                                            <span class="designation">Fundador, Creativa</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Finalizar Elemento Único de Testimonio -->
+                                            <!-- Iniciar Elemento Único de Testimonio -->
+                                            <div class="testimonial-slider-single-item swiper-slide">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">Nuestro nuevo sitio web ha aumentado las ventas
+                                                        en línea considerablemente. No podríamos estar
+                                                        más contentos con los resultados.</p>
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">María López</h4>
+                                                            <span class="designation">Gerente, TecnoCom</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Finalizar Elemento Único de Testimonio -->
+                                            <!-- Iniciar Elemento Único de Testimonio -->
+                                            <div class="testimonial-slider-single-item swiper-slide">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">El diseño de nuestro sitio es moderno y funcional,
+                                                        justo lo que necesitábamos para destacar entre la
+                                                        competencia. ¡Gran trabajo!</p>
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">Carlos Gómez</h4>
+                                                            <span class="designation">CEO, Innovate</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Finalizar Elemento Único de Testimonio -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-nav-style mt-5 mt-xl-0">
+                    <!-- Si necesitamos botones de navegación -->
+                    <div class="slider-button button-prev"><i class="icofont-double-left"></i></div>
+                    <div class="slider-button button-next"><i class="icofont-double-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: Finalizar Sección de Testimonios :::... -->
+
+
+        <!-- ...::: Comienza la Sección de Exhibición de Logos de la Compañía :::... -->
+        <div class="company-logo-display section-mt-165 ">
+            <div class="company-logo-display-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Comienza el Contenido de la Sección -->
+                            <div class="section-content pos-relative">
+                                <span class="section-tag">Soporte al 100%</span>
+                                <h2 class="section-title">¿Lo imaginas? ¡Lo haremos realidad!</h2>
+                            </div>
+                            <!-- Termina el Contenido de la Sección -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                    <div class="company-logo-display-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="company-logo-display-slider">
+                                    <!-- Slider main container -->
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-1.png" alt="">
+                                                    <img src="assets/images/company-logo/1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-2.png" alt="">
+                                                    <img src="assets/images/company-logo/2.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-3.png" alt="">
+                                                    <img src="assets/images/company-logo/3.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-4.png" alt="">
+                                                    <img src="assets/images/company-logo/4.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Company Logo Display Section :::... -->
+
+    <!-- ...::: Inicio de la Sección de Artículos del Blog :::... -->
+    <div class="blog-feed-display-section section-gap-tb-165">
+        <div class="blog-feed-display-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- Inicio del Contenido de la Sección -->
+                        <div class="section-content pos-relative text-center">
+                            <span class="section-tag">Artículos del Blog</span>
+                            <h2 class="section-title">Últimos Consejos y Trucos</h2>
+                        </div>
+                        <!-- Fin del Contenido de la Sección -->
+                    </div>
+                </div>
+
+                <div class="blog-feed-display-wrapper">
+                    <div class="row mb-n5">
+                        <div class="col-12 mb-5">
+                            <!-- Inicio del Ítem Individual del Blog -->
+                            <div class="blog-feed-single-item">
+                                <div class="inner-shape inner-shape-top-right"></div>
+                                <a href="blog-details-sidebar-left.html" class="image">
+                                    <img src="assets/images/blog/blog-feed-img-1.jpg" alt="">
+                                </a>
+                                <div class="content-box">
+                                    <div class="content">
+                                        <div class="post-meta">
+                                            <a href="#" class="catagory">Diseño Web</a>
+                                            <a href="#" class="date">22 Octubre, 2024</a>
+                                        </div>
+                                        <h4 class="title"><a href="blog-details-sidebar-left.html">La importancia de un diseño web profesional para tu negocio</a></h4>
+                                    </div>
+                                    <a href="blog-details-sidebar-left.html" class="btn btn-md btn-outline-one icon-space-left">Leer Más<i class="icofont-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Fin del Ítem Individual del Blog -->
+                        </div>
+                        <div class="col-12 mb-5">
+                            <!-- Inicio del Ítem Individual del Blog -->
+                            <div class="blog-feed-single-item">
+                                <div class="inner-shape inner-shape-top-right"></div>
+                                <a href="blog-details-sidebar-left.html" class="image">
+                                    <img src="assets/images/blog/blog-feed-img-2.jpg" alt="">
+                                </a>
+                                <div class="content-box">
+                                    <div class="content">
+                                        <div class="post-meta">
+                                            <a href="#" class="catagory">Diseño Web</a>
+                                            <a href="#" class="date">22 Octubre, 2024</a>
+                                        </div>
+                                        <h4 class="title"><a href="blog-details-sidebar-left.html">Cómo un buen diseño web aumenta la conversión de clientes</a></h4>
+                                    </div>
+                                    <a href="blog-details-sidebar-left.html" class="btn btn-md btn-outline-one icon-space-left">Leer Más<i class="icofont-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Fin del Ítem Individual del Blog -->
+                        </div>
+                        <div class="col-12 mb-5">
+                            <!-- Inicio del Ítem Individual del Blog -->
+                            <div class="blog-feed-single-item">
+                                <div class="inner-shape inner-shape-top-right"></div>
+                                <a href="blog-details-sidebar-left.html" class="image">
+                                    <img src="assets/images/blog/blog-feed-img-3.jpg" alt="">
+                                </a>
+                                <div class="content-box">
+                                    <div class="content">
+                                        <div class="post-meta">
+                                            <a href="#" class="catagory">Diseño Web</a>
+                                            <a href="#" class="date">22 Octubre, 2024</a>
+                                        </div>
+                                        <h4 class="title"><a href="blog-details-sidebar-left.html">Tendencias actuales en diseño web que debes conocer</a></h4>
+                                    </div>
+                                    <a href="blog-details-sidebar-left.html" class="btn btn-md btn-outline-one icon-space-left">Leer Más<i class="icofont-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Fin del Ítem Individual del Blog -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin de la Sección de Artículos del Blog :::... -->
+
+    <!-- ...::: Start Skill Display Section :::... -->
+    <div class="skill-display-section section-gap-tb-165 section-bg pos-relative">
+        <div class="skill-display-section-box">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-xxl-5">
+                        <!-- Start Section Content -->
+                        <div class="section-content">
+                            <span class="section-tag">Habilidades Especiales</span>
+                            <h2 class="section-title">Campo de Habilidades Especiales</h2>
+
+                            <a href="https://wa.me/message/Z5KNDMRSOW26O1" class="btn btn-xl btn-outline-one icon-space-left" target="_blank" rel="noopener noreferrer">
+                                Contáctanos <i class="icofont-whatsapp"></i>
+                            </a>
+                        </div>
+                        <!-- End Section Content -->
+                    </div>
+
+                    <div class="col-xl-6 col-xxl-6 offset-xxl-1">
+                        <!-- Start Skill Display Wrapper -->
+                        <div class="skill-display-wrapper">
+                            <!-- Start Skill Progress Single Item -->
+                            <div class="skill-progress-single-item">
+                                <span class="tag">Comunicación</span>
+                                <div class="skill-box">
+                                    <div class="progress-line" data-width="75">
+                                        <span class="skill-percentage">91%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Skill Progress Single Item -->
+                            <!-- Start Skill Progress Single Item -->
+                            <div class="skill-progress-single-item">
+                                <span class="tag">Liderazgo</span>
+                                <div class="skill-box">
+                                    <div class="progress-line" data-width="70">
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Skill Progress Single Item -->
+                            <!-- Start Skill Progress Single Item -->
+                            <div class="skill-progress-single-item">
+                                <span class="tag">Trabajo en equipo</span>
+                                <div class="skill-box">
+                                    <div class="progress-line" data-width="90">
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Skill Progress Single Item -->
+                            <!-- Start Skill Progress Single Item -->
+                            <div class="skill-progress-single-item">
+                                <span class="tag">Flexibilidad</span>
+                                <div class="skill-box">
+                                    <div class="progress-line" data-width="80">
+                                        <span class="skill-percentage">96%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Skill Progress Single Item -->
+                        </div>
+                        <!-- End Skill Display Wrapper -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-display-shape"></div>
+    </div>
+    <!-- ...::: End Skill Display Section :::... -->
+
+        <!-- ...::: Inicio Sección de Pie de Página :::... -->
+        <footer class="footer-section section-bg overflow-hidden pos-relative">
+            <div class="footer-inner-shape-top-left"></div>
+            <div class="footer-inner-shape-top-right"></div>
+            <div class="footer-section-top section-gap-t-165">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Inicio Contenido de Sección -->
+                            <div class="section-content pos-relative text-center">
+                                <span class="section-tag">Obtén las Últimas Actualizaciones</span>
+                                <h2 class="section-title">Suscríbete al Boletín</h2>
+                            </div>
+                            <!-- Fin Contenido de Sección -->
+                        </div>
+                    </div>
+                    <div class="footer-top-wrapper text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="#" class="footer-newsletter">
+                                    <input type="email" placeholder="su correo aquí@ejemplo.com">
+                                    <button class="submit-btn" type="submit">Suscríbete Ahora</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center section-gap-tb-165">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center mb-n5">
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <a href="tel:+12107231239" class="info-box">
+                                    <span class="icon"><i class="icofont-phone"></i></span>
+                                    <span class="text">+1-210-723-1239</span>
+                                </a>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <a href="mailto:demo@example.com" class="info-box">
+                                    <span class="icon"><i class="icofont-envelope-open"></i></span>
+                                    <span class="text">demo@example.com</span>
+                                </a>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <ul class="social-link">
+                                    <li><a href="https://x.com/DecorArteWebdev" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/misaelcuadrado/" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@DecorArteWebDesign" target="_blank"><i class="icofont-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-auto">
+                            <div class="footer-copyright">
+                                <p class="copyright-text">&copy; 2024 <a href="index.html">DecorArte</a> Hecho con <i class="icofont-heart"></i> por <a href="#" target="_blank">Misael Cuadrado</a> </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="index.html" class="footer-logo">
+                                <div class="logo">
+                                    <img src="assets/images/logo/logo.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ...::: Fin Sección de Pie de Página :::... -->
+
+        <!-- material-scrolltop button -->
+        <button class="material-scrolltop" type="button"></button>
+    </main>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- Vendor JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.appear.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/images-loaded.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script>
+
+    <!-- Minify Version -->
+    <!-- <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script> -->
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

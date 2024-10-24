@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lendex - Plantilla de Portafolio Personal Bootstrap</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <!-- Vendor CSS (Contiene Bootstrap, Fuentes de Iconos) -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" />
+
+    <!-- Plugin CSS (Archivos de Plugins Globales) -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css" />
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Versión Minificada -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+
+<body>
+
+<main class="main-wrapper">
+    <!-- .....:::::: Inicio Sección de Encabezado :::::.... -->
+    <header class="header-section sticky-header d-none d-lg-block">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <!-- Inicio Logo de Encabezado -->
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/images/logo/logo.png" alt="">
+                        </a>
+                        <!-- Fin Logo de Encabezado -->
+                    </div>
+                    <div class="col-auto">
+                        <!-- Inicio Menú de Encabezado -->
+                        <ul class="header-nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="has-dropdown">
+                                <a href="service-list.html">Servicios</a>
+                                <ul class="submenu">
+                                    <li><a href="service-list.html">Lista de Servicios</a></li>
+                                    <li><a href="service-details.html">Detalles del Servicio</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="blog-list.html">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog-list.html">Lista de Blog a Todo Ancho</a></li>
+                                    <li><a href="blog-list-sidebar-left.html">Lista de Blog con Barra Lateral Izquierda</a></li>
+                                    <li><a href="blog-list-sidebar-right.html">Lista de Blog con Barra Lateral Derecha</a></li>
+                                    <li><a href="blog-details.html">Detalles de Blog a Todo Ancho</a></li>
+                                    <li><a href="blog-details-sidebar-left.html">Detalles de Blog con Barra Lateral Izquierda</a></li>
+                                    <li><a href="blog-details-sidebar-right.html">Detalles de Blog con Barra Lateral Derecha</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Páginas</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">Sobre Nosotros</a></li>
+                                    <li><a href="project-list.html">Proyectos</a></li>
+                                    <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404-page.html">Página 404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                        <!-- Fin Menú de Encabezado -->
+                    </div>
+                    <div class="col">
+                        <div class="header-btn-link text-end">
+                            <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Contrátame <i class="icofont-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .....:::::: Fin Sección de Encabezado :::::.... -->
+
+    <!-- .....:::::: Inicio Sección de Encabezado Móvil :::::.... -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-action-link text-end">
+                        <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu"><i class="icofont-navigation-menu"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....:::::: Fin Sección de Encabezado Móvil :::::.... -->
+
+    <!--  Inicio Sección de Menú Móvil Offcanvas -->
+    <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
+        <!-- Inicio Encabezado Offcanvas -->
+        <div class="offcanvas-header text-right">
+            <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
+        </div> <!-- Fin Encabezado Offcanvas -->
+        <!-- Inicio Wrapper de Menú Móvil Offcanvas -->
+        <div class="offcanvas-mobile-menu-wrapper">
+            <!-- Inicio Menú Móvil  -->
+            <div class="mobile-menu-bottom">
+                <!-- Inicio Menú Móvil Nav -->
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Servicios</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="service-list.html">Lista de Servicios</a></li>
+                                <li><a href="service-details.html">Detalles del Servicio</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Blog</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="blog-list.html">Lista de Blog a Todo Ancho</a></li>
+                                <li><a href="blog-list-sidebar-left.html">Lista de Blog con Barra Lateral Izquierda</a></li>
+                                <li><a href="blog-list-sidebar-right.html">Lista de Blog con Barra Lateral Derecha</a></li>
+                                <li><a href="blog-details.html">Detalles de Blog a Todo Ancho</a></li>
+                                <li><a href="blog-details-sidebar-left.html">Detalles de Blog con Barra Lateral Izquierda</a></li>
+                                <li><a href="blog-details-sidebar-right.html">Detalles de Blog con Barra Lateral Derecha</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Páginas</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about.html">Sobre Nosotros</a></li>
+                                <li><a href="project-list.html">Proyectos</a></li>
+                                <li><a href="project-details.html">Detalles del Proyecto</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="404-page.html">Página 404</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span>Contacto</span></a>
+                        </li>
+                    </ul>
+                </div> <!-- Fin Menú Móvil Nav -->
+            </div> <!-- Fin Menú Móvil -->
+
+            <!-- Inicio Información de Contacto Móvil -->
+            <div class="mobile-contact-info text-center">
+                <ul class="social-link">
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-facebook"></i></a>
+                    </li>
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" href="https://example.com"><i class="icofont-skype"></i></a></li>
+                </ul>
+            </div>
+            <!-- Fin Información de Contacto Móvil -->
+
+        </div> <!-- Fin Wrapper de Menú Móvil Offcanvas -->
+    </div>
+    <!-- ...:::: Fin Sección de Menú Móvil Offcanvas :::... -->
+
+    <!-- Overlay Offcanvas -->
+    <div class="offcanvas-overlay"></div>
+
+    <!-- ...::: Inicio Sección de Breadcrumb :::... -->
+    <div class="breadcrumb-section section-bg overflow-hidden pos-relative">
+        <div class="breadcrumb-shape-top-left"></div>
+        <div class="breadcrumb-shape-bottom-right"></div>
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <h2 class="title">FAQ</h2>
+                            <ul class="breadcrumb-link">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li class="active" aria-current="page">FAQ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Fin Sección de Breadcrumb :::... -->
+
+    <!-- ...::: Start FAQ Intro Section :::... -->
+        <div class="faq-intro-section section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro-content text-center">
+                            <h3 class="title">Preguntas Frecuentes</h3>
+                            <p>Las preguntas en esta sección se basan en inquietudes comunes de nuestros clientes anteriores. Los precios y servicios mostrados son precios estándar de la industria; sin embargo, siempre hemos trabajado con diferentes presupuestos. Nuestro objetivo es colaborar con nuestra comunidad para construir relaciones sólidas y asegurarnos de que cada cliente obtenga lo que necesita. Cada proyecto es único y, por lo tanto, es difícil proporcionar precios exactos, ya que, por ejemplo, negocios similares pueden tener diferentes necesidades en sus sitios web. Nos comprometemos a hacer que funcione para usted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End FAQ Intro Section :::... -->
+
+
+
+        <!-- ...::: Start FAQ Section :::... -->
+        <div class="faq-section section-gap-tb-165">
+            <div class="faq-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="faq-wrapper">
+                                <div class="faq-list-section">
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">01.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Cuánto cobran por un sitio web?</h4>
+                                            <p>Los costos de un sitio web pueden variar entre $1,250 y $6,250+, según la complejidad y las características del proyecto. Pero no se preocupe, ¡estamos aquí para ayudarle! Proporcionamos presupuestos personalizados después de comprender sus necesidades específicas, asegurándonos de que obtenga el mejor valor por su inversión.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">02.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Ofrecen un plan de pagos?</h4>
+                                            <p>¡Sí! Entendemos que cada cliente tiene diferentes necesidades. Por eso, ofrecemos planes de pago flexibles para que sea más fácil para usted. Una opción común es 50% por adelantado, 25% a mitad de camino y 25% al finalizar. Nos aseguraremos de adaptar un plan que se ajuste a su presupuesto.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">03.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Cuánto tiempo toma construir un sitio web?</h4>
+                                            <p>El plazo típico para desarrollar un sitio web empresarial estándar es de 2 a 5 semanas. Para proyectos más complejos, puede tomar de 1 a 2 meses. Pero no se preocupe, proporcionaremos un cronograma específico y nos comunicaremos constantemente para asegurar que todo esté a su gusto.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">04.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Qué pasa si no me gusta el diseño de mi sitio web?</h4>
+                                            <p>Su satisfacción es nuestra prioridad. Trabajamos de forma iterativa y recopilamos sus comentarios en cada etapa del proceso. Si hay algo que no le convence, realizar cambios es parte de nuestro compromiso. ¡Queremos que esté completamente satisfecho con el diseño final!</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">05.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Puedo actualizar el sitio web yo mismo una vez que se haya construido?</h4>
+                                            <p>¡Absolutamente! Usamos sistemas de gestión de contenido (CMS) intuitivos como WordPress, que le permiten realizar actualizaciones fácilmente. Además, le proporcionaremos la capacitación necesaria para que se sienta seguro al gestionar su sitio. ¡Su independencia es clave para nosotros!</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">06.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Hacen SEO para mi sitio web cuando lo construyen?</h4>
+                                            <p>¡Sí! Implementamos las mejores prácticas de SEO on-page desde el principio. Esto incluye optimizar títulos de página, metadescripciones y asegurarnos de que su sitio sea compatible con dispositivos móviles y de carga rápida. Nuestro objetivo es ayudarle a destacar en los motores de búsqueda desde el primer día.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">07.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Ofrecen soporte continuo después del lanzamiento del sitio web?</h4>
+                                            <p>¡Claro! Después del lanzamiento, ofrecemos 30 días de soporte gratuito para asegurarnos de que todo funcione a la perfección. Una vez finalizado este período, tenemos paquetes de soporte y mantenimiento que se adaptan a sus necesidades. Estamos aquí para hacer que su experiencia sea fluida y exitosa.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+
+                                    <!-- Start FAQ List Single Item -->
+                                    <div class="faq-list-single-item">
+                                        <div class="number">08.</div>
+                                        <div class="content">
+                                            <h4 class="title">¿Puedo tener un formulario de suscripción por correo electrónico en mi sitio web?</h4>
+                                            <p>¡Definitivamente! Podemos integrar formularios de suscripción que se conecten a su plataforma de marketing por correo electrónico preferida. Esto le ayudará a construir su lista de contactos de manera efectiva y mantener a sus clientes actualizados con las últimas novedades.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End FAQ List Single Item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <!--  Start Pagination  -->
+                            <div class="pagination">
+                                <div class="row">
+<!--                                    <div class="col-12">-->
+<!--                                        <ul class="pagination-nav-list">-->
+<!--                                            <li class="prev"><a href="#"><i class="icofont-double-left"></i></a></li>-->
+<!--                                            <li><a href="#">1</a></li>-->
+<!--                                            <li class="active"><a href="#">2</a></li>-->
+<!--                                            <li><a href="#">3</a></li>-->
+<!--                                            <li class="next"><a href="#"><i class="icofont-double-right"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                            <!--  End Pagination  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End FAQ Section :::... -->
+
+
+        <!-- ...::: Inicio Sección de Pie de Página :::... -->
+        <footer class="footer-section section-bg overflow-hidden pos-relative">
+            <div class="footer-inner-shape-top-left"></div>
+            <div class="footer-inner-shape-top-right"></div>
+            <div class="footer-section-top section-gap-t-165">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Inicio Contenido de Sección -->
+                            <div class="section-content pos-relative text-center">
+                                <span class="section-tag">Obtén las Últimas Actualizaciones</span>
+                                <h2 class="section-title">Suscríbete al Boletín</h2>
+                            </div>
+                            <!-- Fin Contenido de Sección -->
+                        </div>
+                    </div>
+                    <div class="footer-top-wrapper text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="#" class="footer-newsletter">
+                                    <input type="email" placeholder="su correo aquí@ejemplo.com">
+                                    <button class="submit-btn" type="submit">Suscríbete Ahora</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center section-gap-tb-165">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center mb-n5">
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <a href="tel:+12107231239" class="info-box">
+                                    <span class="icon"><i class="icofont-phone"></i></span>
+                                    <span class="text">+1-210-723-1239</span>
+                                </a>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <a href="mailto:demo@example.com" class="info-box">
+                                    <span class="icon"><i class="icofont-envelope-open"></i></span>
+                                    <span class="text">demo@example.com</span>
+                                </a>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                        <div class="col-auto mb-5">
+                            <!-- Inicio Información de Contacto -->
+                            <div class="footer-single-info">
+                                <ul class="social-link">
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-dribbble"></i></a></li>
+                                    <li><a href="https://www.example.com" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Fin Información de Contacto -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-auto">
+                            <div class="footer-copyright">
+                                <p class="copyright-text">&copy; 2024 <a href="index.html">DecorArte</a> Hecho con <i class="icofont-heart"></i> por <a href="#" target="_blank">Misael Cuadrado</a> </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="index.html" class="footer-logo">
+                                <div class="logo">
+                                    <img src="assets/images/logo/logo.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ...::: Fin Sección de Pie de Página :::... -->
+
+        <!-- material-scrolltop button -->
+        <button class="material-scrolltop" type="button"></button>
+    </main>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- Vendor JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.appear.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/images-loaded.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script>
+
+    <!-- Minify Version -->
+    <!-- <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script> -->
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
